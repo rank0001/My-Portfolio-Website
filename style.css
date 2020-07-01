@@ -148,8 +148,6 @@ footer {
   color: white;
   font-size: 1.5em;
 } 
-
-
 .grid img {
   width: 50px;
 }
@@ -157,9 +155,6 @@ footer {
 .grid li{
   list-style-type: none;
   display: inline;
-}
-.grid li:hover{
-  columns: purple !important;
 }
 
 /*for different resolutions*/
