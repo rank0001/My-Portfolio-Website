@@ -55,7 +55,6 @@ body {
   top: 1.4em;
 }
 a:hover {
-  background: hotpink;
   color: green;
 }
 
@@ -90,6 +89,7 @@ a:hover {
 .lower-section {
   background: url("images/latest-work-bg.png");
   background-repeat: no-repeat;
+  background-position: center;
 }
 .lower-section img {
   width: 100%;
@@ -113,6 +113,7 @@ a:hover {
 footer {
   background: url(images/footer-bg.png);
   background-image: no-repeat;
+  background-position: center;
   text-align: center;
   margin-top: 80px;
 }
@@ -144,6 +145,19 @@ footer {
   text-decoration: none;
   color: white;
   font-size: 1.5em;
+} 
+
+
+.grid img {
+  width: 50px;
+}
+
+.grid li{
+  list-style-type: none;
+  display: inline;
+}
+.grid li:hover{
+  columns: purple !important;
 }
 
 /*for different resolutions*/
@@ -159,8 +173,7 @@ footer {
     } 
     .half img{
         height: 500px;
-    }
-    
+    }  
 } 
 @media screen and (max-width:240px){
     .footer-anchor{
