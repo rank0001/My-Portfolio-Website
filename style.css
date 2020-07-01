@@ -90,6 +90,7 @@ a:hover {
   background: url("images/latest-work-bg.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .lower-section img {
   width: 100%;
@@ -114,6 +115,7 @@ footer {
   background: url(images/footer-bg.png);
   background-image: no-repeat;
   background-position: center;
+  background-size: cover;
   text-align: center;
   margin-top: 80px;
 }
