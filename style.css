@@ -1,12 +1,12 @@
+
 body{
 font-family: 'Ubuntu', sans-serif; 
 margin: 0;
 padding:0;
-
 } 
 h1{
     font-size: 45px;
-}
+}  
 .name-highlight{
     color: orange;
 } 
@@ -25,8 +25,6 @@ h1{
 .top-section{
     background:url("images/header-bg.png"); 
     background-repeat: no-repeat;
-    
-
 }
 .top-section:after{
     content: "";
@@ -39,6 +37,55 @@ h1{
     background:#FF4177;
     color:white;
     border-radius: 5px;
-    font-weight: 700;
+    font-weight: 800;
     padding: 10px 20px;
+} 
+
+.mid-section{
+    background: url("images/biography-bg.png");
+    background-repeat: no-repeat;
 }
+.mid-section:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.lower-section h1{
+    text-align: center;
+}   
+.lower-section{
+    background: url("images/latest-work-bg.png");
+    background-repeat: no-repeat;
+} 
+.lower-section img{
+    width: 100%;
+    height: auto;
+}
+.lower-section .image{
+    float: left;
+    width: 27%;
+    margin: 2%;
+    padding: 1%;
+} 
+
+.lower-section:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+footer{
+    background: url(images/footer-bg.png);
+    background-image:no-repeat;
+    text-align: center;
+}
+.email-link{
+    text-decoration: none;
+    background:#FF4177;
+    color:white;
+    height: 90px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border: 2px solid red;
+}
+
