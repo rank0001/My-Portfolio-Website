@@ -1,91 +1,170 @@
+/*design for every element in the body */
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-body{
-font-family: 'Ubuntu', sans-serif; 
-margin: 0;
-padding:0;
+/*design for the top section */
+
+.top-section h1 {
+  font-size: 2.9em;
+}
+.top-section h2 {
+  font-size: 2.5em;
+}
+.name-highlight {
+  color: deeppink;
+}
+.top-section p {
+  line-height: 2em;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.top-section {
+  background: url("images/header-bg.png");
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+}
+.top-section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*design for both top and mid section */
+.half {
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+  padding: 1%;
+}
+
+.half img {
+  width: 100%;
+  height: auto;
+}
+.link-button {
+  text-decoration: none;
+  background: #ff4177;
+  color: white;
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 10px 20px;
+  position: relative;
+  top: 1.4em;
+}
+a:hover {
+  background: hotpink;
+  color: green;
+}
+
+/*mid section desgin */
+
+.mid-section h1 {
+  font-size: 2.5em;
+}
+
+.mid-section p {
+  line-height: 2em;
+  color: grey;
+  font-size: 1.2em;
+}
+
+.mid-section {
+  background: url("images/biography-bg.png");
+  background-repeat: no-repeat;
+}
+.mid-section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*lower section design */
+
+.lower-section h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+.lower-section {
+  background: url("images/latest-work-bg.png");
+  background-repeat: no-repeat;
+}
+.lower-section img {
+  width: 100%;
+  height: auto;
+}
+.lower-section .image {
+  float: left;
+  width: 27%;
+  margin-left: 2%;
+  padding: 1%;
+}
+
+.lower-section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*footer section desgin */
+
+footer {
+  background: url(images/footer-bg.png);
+  background-image: no-repeat;
+  text-align: center;
+  margin-top: 80px;
+}
+.footer h1 {
+  font-size: 2.5em;
+}
+.client {
+  margin-top: 3em;
+}
+.client p {
+  margin-top: 30px;
+  line-height: 2em;
+  margin-bottom: 40px;
+}
+.footer-anchor {
+  background: linear-gradient(55deg, #ff4177, purple);
+  color: white;
+  width: 27%;
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  overflow-wrap: break-word;
+  margin-bottom: 20px;
+}
+.footer-anchor p {
+  padding-top: 10px;
+}
+.email-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+/*for different resolutions*/
+@media screen and (max-width:1100px){
+    .footer-anchor{
+        height: 130px;
+    }
 } 
-h1{
-    font-size: 45px;
-}  
-.name-highlight{
-    color: orange;
+@media screen and (max-width:640px){
+    .footer-anchor{
+        height: 160px;
+        width: 37%;
+    } 
+    .half img{
+        height: 500px;
+    }
+    
 } 
-.half{
-    float:left;
-    width: 40%;
-    margin-left: 5%;
-    padding-left: 2%;
-}  
-
-.half img{
-    width: 100%;
-    height: auto;
+@media screen and (max-width:240px){
+    .footer-anchor{
+        height: 170px;
+        width: 45%;
+    }    
 }
-
-.top-section{
-    background:url("images/header-bg.png"); 
-    background-repeat: no-repeat;
-}
-.top-section:after{
-    content: "";
-    display: block;
-    clear: both;
-} 
-
-.link-button{
-    text-decoration: none;
-    background:#FF4177;
-    color:white;
-    border-radius: 5px;
-    font-weight: 800;
-    padding: 10px 20px;
-} 
-
-.mid-section{
-    background: url("images/biography-bg.png");
-    background-repeat: no-repeat;
-}
-.mid-section:after{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.lower-section h1{
-    text-align: center;
-}   
-.lower-section{
-    background: url("images/latest-work-bg.png");
-    background-repeat: no-repeat;
-} 
-.lower-section img{
-    width: 100%;
-    height: auto;
-}
-.lower-section .image{
-    float: left;
-    width: 27%;
-    margin: 2%;
-    padding: 1%;
-} 
-
-.lower-section:after{
-    content: "";
-    display: block;
-    clear: both;
-}
-footer{
-    background: url(images/footer-bg.png);
-    background-image:no-repeat;
-    text-align: center;
-}
-.email-link{
-    text-decoration: none;
-    background:#FF4177;
-    color:white;
-    height: 90px;
-    font-weight: 800;
-    padding: 10px 20px;
-    border: 2px solid red;
-}
-
